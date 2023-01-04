@@ -2,6 +2,7 @@
 
 ## Prerequisites
 
+
 ```bash
 docker run -d --name pg-ovrednotenje-izdelkov -e POSTGRES_USER=dbuser -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=ocene -p 5432:5432 --network rso postgres:13
 ```
