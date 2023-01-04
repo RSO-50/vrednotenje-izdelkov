@@ -13,11 +13,11 @@ spec:
         app: ovrednotenje-izdelkov
     spec:
       containers:
-        - image: rsoskupina50/ovrednotenje-izdelkov
+        - image: rsoskupina50/vrednotenje-izdelkov:2023-01-04-18-41-26
           name: ovrednotenje-izdelkov
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
-              value: jdbc:postgresql://snuffle.db.elephantsql.com/daggxydk
+              value: jdbc:postgresql://snuffleupagus.db.elephantsql.com/daggxydk
             - name: KUMULUZEE_DATASOURCES0_USERNAME
               value: daggxydk
             - name: KUMULUZEE_DATASOURCES0_PASSWORD
@@ -44,7 +44,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: uporabniki
+  name: ovrednotenje-izdelkov
 spec:
   type: ClusterIP
   ports:
@@ -52,4 +52,4 @@ spec:
       protocol: TCP
       targetPort: server
   selector:
-    app: uporabniki
+    app: ovrednotenje-izdelkov
