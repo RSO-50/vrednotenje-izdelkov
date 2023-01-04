@@ -53,8 +53,8 @@ Value: true or false
 kubectl version
 kubectl --help
 kubectl get nodes
-kubectl create -f uporabniki-deployment.yaml 
-kubectl apply -f uporabniki-deployment.yaml 
+kubectl create -f ocene-deployment.yaml 
+kubectl apply -f ocene-deployment.yaml 
 kubectl get services 
 kubectl get deployments
 kubectl get pods

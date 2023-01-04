@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: uporabniki-deployment
+  name: ovrednotenje-izdelkov-deployment
 spec:
   replicas: 1
   selector:
@@ -17,11 +17,11 @@ spec:
           name: uporabniki
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
-              value: jdbc:postgresql://mouse.db.elephantsql.com/auevkfam
+              value: jdbc:postgresql://snuffle.db.elephantsql.com/daggxydk
             - name: KUMULUZEE_DATASOURCES0_USERNAME
-              value: auevkfam
+              value: daggxydk
             - name: KUMULUZEE_DATASOURCES0_PASSWORD
-              value: KOOUb0UkwgcslLt66MRP3jL5BIH9C48c
+              value: 31ll2StFZDv6oXF5oB3QaZYFWzzMo1IG
           ports:
             - containerPort: 8080
               name: server
