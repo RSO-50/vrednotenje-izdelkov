@@ -13,8 +13,8 @@ spec:
         app: ovrednotenje-izdelkov
     spec:
       containers:
-        - image: rsoskupina50/uporabniki:2022-12-27-14-49-29
-          name: uporabniki
+        - image: rsoskupina50/ovrednotenje-izdelkov
+          name: ovrednotenje-izdelkov
           env:
             - name: KUMULUZEE_DATASOURCES0_CONNECTIONURL
               value: jdbc:postgresql://snuffle.db.elephantsql.com/daggxydk
